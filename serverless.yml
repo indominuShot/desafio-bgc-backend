@@ -1,0 +1,69 @@
+service: serverless
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-bundle # Package our functions with Webpack
+  - serverless-offline
+  - serverless-dotenv-plugin # Load .env as environment variables
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  region: sa-east-1
+  apiGateway: { shouldStartNameWithService: true }
+  environment:
+    tableName: products
+
+  iam:
+    role:
+      statements:
+
+      - Effect: Allow
+        Action:
+          - dynamodb:Scan
+          - dynamodb:Query
+          - dynamodb:GetItem
+          - dynamodb:PutItem
+          - dynamodb:UpdateItem
+          - dynamodb:DeleteItem
+          - dynamodb:DescribeTable
+          - s3:GetObject
+          - s3:PutObject
+          - s3:DeleteObject
+        Resource: "arn:aws:dynamodb:sa-east-1:*:*"
+
+
+functions:
+  listMinions:
+    handler: src/lambdas/Minion/list.listAll
+    events:
+      - http:
+          path: /minions
+          method: get
+          cors: true
+
+  createMinion:
+    handler: src/lambdas/Minion/create.index
+    events:
+      - http:
+          path: /minions/create
+          method: post
+          cors: true
+
+  deleteMinion:
+    handler: src/lambdas/Minion/delete.index
+    events:
+      - http:
+          path: /minions/delete/{id}
+          method: delete
+          cors: true
+
+  updateMinion:
+    handler: src/lambdas/Minion/update.index
+    events:
+      - http:
+          path: /minions/update/{id}
+          method: put
+          cors: true

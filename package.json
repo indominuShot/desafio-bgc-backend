@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.863.0",
+    "serverless-dotenv-plugin": "^3.8.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-developit": "^1.2.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "serverless-bundle": "^4.2.2",
+    "serverless-offline": "^6.8.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-developit",
+      "@sinonjs/eslint-config"
+    ]
+  }
+}
