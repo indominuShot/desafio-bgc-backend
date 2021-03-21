@@ -201,7 +201,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless/dev/1616359517525-2021-03-21T20:45:17.525Z/serverless.zip"
+          "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
         },
         "Handler": "src/lambdas/Minion/list.listAll",
         "Runtime": "nodejs12.x",
@@ -234,7 +234,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless/dev/1616359517525-2021-03-21T20:45:17.525Z/serverless.zip"
+          "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
         },
         "Handler": "src/lambdas/Minion/create.index",
         "Runtime": "nodejs12.x",
@@ -267,7 +267,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless/dev/1616359517525-2021-03-21T20:45:17.525Z/serverless.zip"
+          "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
         },
         "Handler": "src/lambdas/Minion/delete.index",
         "Runtime": "nodejs12.x",
@@ -300,7 +300,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless/dev/1616359517525-2021-03-21T20:45:17.525Z/serverless.zip"
+          "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
         },
         "Handler": "src/lambdas/Minion/update.index",
         "Runtime": "nodejs12.x",
@@ -333,7 +333,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless/dev/1616359517525-2021-03-21T20:45:17.525Z/serverless.zip"
+          "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
         },
         "Handler": "src/lambdas/Sale/create.index",
         "Runtime": "nodejs12.x",
@@ -963,7 +963,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1616359493478": {
+    "ApiGatewayDeployment1616360388295": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
