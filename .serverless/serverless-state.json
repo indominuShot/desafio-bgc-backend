@@ -233,7 +233,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
+                "S3Key": "serverless/serverless/dev/1616367858631-2021-03-21T23:04:18.631Z/serverless.zip"
               },
               "Handler": "src/lambdas/Minion/list.listAll",
               "Runtime": "nodejs12.x",
@@ -266,7 +266,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
+                "S3Key": "serverless/serverless/dev/1616367858631-2021-03-21T23:04:18.631Z/serverless.zip"
               },
               "Handler": "src/lambdas/Minion/create.index",
               "Runtime": "nodejs12.x",
@@ -299,7 +299,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
+                "S3Key": "serverless/serverless/dev/1616367858631-2021-03-21T23:04:18.631Z/serverless.zip"
               },
               "Handler": "src/lambdas/Minion/delete.index",
               "Runtime": "nodejs12.x",
@@ -332,7 +332,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
+                "S3Key": "serverless/serverless/dev/1616367858631-2021-03-21T23:04:18.631Z/serverless.zip"
               },
               "Handler": "src/lambdas/Minion/update.index",
               "Runtime": "nodejs12.x",
@@ -365,7 +365,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z/serverless.zip"
+                "S3Key": "serverless/serverless/dev/1616367858631-2021-03-21T23:04:18.631Z/serverless.zip"
               },
               "Handler": "src/lambdas/Sale/create.index",
               "Runtime": "nodejs12.x",
@@ -391,54 +391,54 @@
               "CreateSaleLogGroup"
             ]
           },
-          "ListMinionsLambdaVersion53SK0cN4v0Wshkl5RnKSAk0rn3zJM2hahIo6S2cEmU": {
+          "ListMinionsLambdaVersionfpCQpSfKXDaBTUITQsenJi32QD5c7on9QWp0fYeVD8": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ListMinionsLambdaFunction"
               },
-              "CodeSha256": "zYY6ZkNLHoRPQ6KNanWl3acPJ+65CH3wPpLs8aWOPCk="
+              "CodeSha256": "78RQ+/A6XGnKoOVuj9+ANS6916G30K8HX4lL+N1dI4M="
             }
           },
-          "CreateMinionLambdaVersion4wA7mCMjElWCZN7QHacVQzKgqDDmV4OHtk8rGWA": {
+          "CreateMinionLambdaVersionT4wNJjATviIhjTulXTVfJV7pRnhGBBMu72BX2AqBhM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateMinionLambdaFunction"
               },
-              "CodeSha256": "zYY6ZkNLHoRPQ6KNanWl3acPJ+65CH3wPpLs8aWOPCk="
+              "CodeSha256": "78RQ+/A6XGnKoOVuj9+ANS6916G30K8HX4lL+N1dI4M="
             }
           },
-          "DeleteMinionLambdaVersion24GXeESwP96GsavcFg5EUL8yITdu9VYkZ32pAxvkI": {
+          "DeleteMinionLambdaVersionqptvDuEahi0IGp8bDLl2Mbdc0QyoPnUxBsN0cOzVAI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DeleteMinionLambdaFunction"
               },
-              "CodeSha256": "zYY6ZkNLHoRPQ6KNanWl3acPJ+65CH3wPpLs8aWOPCk="
+              "CodeSha256": "78RQ+/A6XGnKoOVuj9+ANS6916G30K8HX4lL+N1dI4M="
             }
           },
-          "UpdateMinionLambdaVersionZbEee73AHMJHzSmTZYqLVia283Lwk9Y8qXsnBdUI4": {
+          "UpdateMinionLambdaVersionqiZRUg1Q4OMW0x0MM2yXL0FVIabAyRPN55SLlNt0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "UpdateMinionLambdaFunction"
               },
-              "CodeSha256": "zYY6ZkNLHoRPQ6KNanWl3acPJ+65CH3wPpLs8aWOPCk="
+              "CodeSha256": "78RQ+/A6XGnKoOVuj9+ANS6916G30K8HX4lL+N1dI4M="
             }
           },
-          "CreateSaleLambdaVersionX5KGZxRvAGTUJaILir9jeFs7gB4CelLrbox0yRNmvK0": {
+          "CreateSaleLambdaVersionKWc3mMr1faVXUwkV5AsV5FarMhNGAEF6ui9IbRDN0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateSaleLambdaFunction"
               },
-              "CodeSha256": "zYY6ZkNLHoRPQ6KNanWl3acPJ+65CH3wPpLs8aWOPCk="
+              "CodeSha256": "78RQ+/A6XGnKoOVuj9+ANS6916G30K8HX4lL+N1dI4M="
             }
           },
           "ApiGatewayRestApi": {
@@ -995,7 +995,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1616360388295": {
+          "ApiGatewayDeployment1616367836411": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -1211,31 +1211,31 @@
           "ListMinionsLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ListMinionsLambdaVersion53SK0cN4v0Wshkl5RnKSAk0rn3zJM2hahIo6S2cEmU"
+              "Ref": "ListMinionsLambdaVersionfpCQpSfKXDaBTUITQsenJi32QD5c7on9QWp0fYeVD8"
             }
           },
           "CreateMinionLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateMinionLambdaVersion4wA7mCMjElWCZN7QHacVQzKgqDDmV4OHtk8rGWA"
+              "Ref": "CreateMinionLambdaVersionT4wNJjATviIhjTulXTVfJV7pRnhGBBMu72BX2AqBhM"
             }
           },
           "DeleteMinionLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteMinionLambdaVersion24GXeESwP96GsavcFg5EUL8yITdu9VYkZ32pAxvkI"
+              "Ref": "DeleteMinionLambdaVersionqptvDuEahi0IGp8bDLl2Mbdc0QyoPnUxBsN0cOzVAI"
             }
           },
           "UpdateMinionLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UpdateMinionLambdaVersionZbEee73AHMJHzSmTZYqLVia283Lwk9Y8qXsnBdUI4"
+              "Ref": "UpdateMinionLambdaVersionqiZRUg1Q4OMW0x0MM2yXL0FVIabAyRPN55SLlNt0"
             }
           },
           "CreateSaleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateSaleLambdaVersionX5KGZxRvAGTUJaILir9jeFs7gB4CelLrbox0yRNmvK0"
+              "Ref": "CreateSaleLambdaVersionKWc3mMr1faVXUwkV5AsV5FarMhNGAEF6ui9IbRDN0"
             }
           },
           "ServiceEndpoint": {
@@ -1406,7 +1406,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ListMinionsLambdaVersion53SK0cN4v0Wshkl5RnKSAk0rn3zJM2hahIo6S2cEmU"
+        "versionLogicalId": "ListMinionsLambdaVersionfpCQpSfKXDaBTUITQsenJi32QD5c7on9QWp0fYeVD8"
       },
       "createMinion": {
         "handler": "src/lambdas/Minion/create.index",
@@ -1446,7 +1446,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "CreateMinionLambdaVersion4wA7mCMjElWCZN7QHacVQzKgqDDmV4OHtk8rGWA"
+        "versionLogicalId": "CreateMinionLambdaVersionT4wNJjATviIhjTulXTVfJV7pRnhGBBMu72BX2AqBhM"
       },
       "deleteMinion": {
         "handler": "src/lambdas/Minion/delete.index",
@@ -1486,7 +1486,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "DeleteMinionLambdaVersion24GXeESwP96GsavcFg5EUL8yITdu9VYkZ32pAxvkI"
+        "versionLogicalId": "DeleteMinionLambdaVersionqptvDuEahi0IGp8bDLl2Mbdc0QyoPnUxBsN0cOzVAI"
       },
       "updateMinion": {
         "handler": "src/lambdas/Minion/update.index",
@@ -1526,7 +1526,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "UpdateMinionLambdaVersionZbEee73AHMJHzSmTZYqLVia283Lwk9Y8qXsnBdUI4"
+        "versionLogicalId": "UpdateMinionLambdaVersionqiZRUg1Q4OMW0x0MM2yXL0FVIabAyRPN55SLlNt0"
       },
       "createSale": {
         "handler": "src/lambdas/Sale/create.index",
@@ -1566,7 +1566,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "CreateSaleLambdaVersionX5KGZxRvAGTUJaILir9jeFs7gB4CelLrbox0yRNmvK0"
+        "versionLogicalId": "CreateSaleLambdaVersionKWc3mMr1faVXUwkV5AsV5FarMhNGAEF6ui9IbRDN0"
       }
     },
     "configValidationMode": "warn",
@@ -1590,7 +1590,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/serverless/dev/1616360407927-2021-03-21T21:00:07.927Z",
+    "artifactDirectoryName": "serverless/serverless/dev/1616367858631-2021-03-21T23:04:18.631Z",
     "artifact": ""
   }
 }

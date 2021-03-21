@@ -2,7 +2,7 @@ const emailStructure = `
 <div>
     <header>
         <h2 style="text-align: center; color: #333">
-            Maravilha! Sua compra de 8 produtos foi confirmada.
+            Maravilha! Sua compra foi confirmada.
         </h2>
 
         <h2 style="color: #8c8c8c; text-align: center;">Nós da Minion Shop agradecemos sua compra! Esperamos vê-lo(a) em breve.</h2>

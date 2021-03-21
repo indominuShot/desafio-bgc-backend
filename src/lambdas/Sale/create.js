@@ -6,7 +6,7 @@ import getDate from '../../Utils/getDate';
 import emailStructure from '../../Utils/emailStructure';
 
 export async function index(event) {
-  const data = JSON.parse(event.body);
+  const { data, email } = JSON.parse(event.body);
 
   const params = {
     TableName: 'Sales',
@@ -28,7 +28,7 @@ export async function index(event) {
 
   await transporter.sendMail({
     from: `Shop Minions <${process.env.EMAIL_USER}>`, // sender address
-    to: 'luang193@gmail.com', // list of receivers
+    to: `luang193@gmail.com, ${email}, thiago@bgcbrasil.com.br`, // list of receivers
     subject: 'Compra confirmada', // Subject line
     html: emailStructure,
   });
