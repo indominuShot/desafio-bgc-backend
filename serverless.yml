@@ -19,21 +19,19 @@ provider:
   iam:
     role:
       statements:
-
-      - Effect: Allow
-        Action:
-          - dynamodb:Scan
-          - dynamodb:Query
-          - dynamodb:GetItem
-          - dynamodb:PutItem
-          - dynamodb:UpdateItem
-          - dynamodb:DeleteItem
-          - dynamodb:DescribeTable
-          - s3:GetObject
-          - s3:PutObject
-          - s3:DeleteObject
-        Resource: "arn:aws:dynamodb:sa-east-1:*:*"
-
+        - Effect: Allow
+          Action:
+            - dynamodb:Scan
+            - dynamodb:Query
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+            - dynamodb:DescribeTable
+            - s3:GetObject
+            - s3:PutObject
+            - s3:DeleteObject
+          Resource: 'arn:aws:dynamodb:sa-east-1:*:*'
 
 functions:
   listMinions:
@@ -66,4 +64,12 @@ functions:
       - http:
           path: /minions/update/{id}
           method: put
+          cors: true
+
+  createSale:
+    handler: src/lambdas/Sale/create.index
+    events:
+      - http:
+          path: /sale/create
+          method: post
           cors: true
